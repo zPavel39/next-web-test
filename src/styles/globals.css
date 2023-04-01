@@ -36,10 +36,10 @@ h6 {
 html,
 body {
   height: 100%;
-  background: #fbfbfc;
+  background-color: #1d252e;
   line-height: 1;
   font-size: 14px;
-  color: #1d252e;
+  color: #000000;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }

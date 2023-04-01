@@ -1,4 +1,46 @@
-.Card {
+.card {
     display: flex;
     flex-direction: column;
+    border: 2px solid #2d4965;
+    height: 400px;
+    padding: 20px;
+    background-color: #406285;
+    &__img {
+        margin: 0 auto;
+        box-shadow: 20px -15px 5px rgba(255, 0, 0, 0);
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 15px;   
+        gap: 10px;
+        height: 100%;
+    }
+    &__title {
+        font-size: 25px;
+    }
+    &__description {
+    }
+    &__price {
+        font-size: 20px;
+        font-weight: 600;
+    }  
+}
+@media (max-width: 750px) {
+    .card {
+        height: 350px;
+        padding: 15px 10px;
+        &__img {
+            width: 150px ;
+            height: 150px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__price {
+            font-size: 15px;
+        }
+    }
 }

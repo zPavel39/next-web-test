@@ -1,2 +1,66 @@
 .MainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #1d252e;
+    height: 100%;
+    &__title {
+        color: aliceblue;
+        font-style: italic;
+        font-size: 48px;
+        margin: 20px 0 20px 0;
+    }
+    &__list {
+        max-width: 1120px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+    &__card {
+        max-height: 450px;
+        height: 100%;
+        max-width: 350px;
+        width: 100%;
+    }
+    &__main {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .MainPage {
+        &__list {
+            grid-template-columns: 6fr 6fr;
+        }
+    }
+}
+@media (max-width: 750px) {
+    .MainPage {
+        &__title {
+            font-size: 40px;
+        }
+        &__list {
+            grid-template-columns: 6fr 6fr;
+        }
+    }
+}
+@media (max-width: 623px) {
+    .MainPage {
+        &__title {
+            font-size: 35px;
+        }
+        &__list {
+            grid-template-columns: 12fr;
+        }
+    }
 }
